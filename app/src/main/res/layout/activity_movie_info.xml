@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_1"
+    tools:context="scenerio.testing.com.petsearch.MovieInfo">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/colorGreen"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorWhite"
+            android:src="@drawable/back_arrow_24"
+            android:layout_margin="10dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/back"
+            android:layout_centerVertical="true"
+            android:text="Kathanayakadu"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/moviename"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/petsearch"
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_height="220dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/image"
+            android:layout_margin="15dp"
+            android:text="In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men."
+            android:textColor="@color/colorDark"
+            android:id="@+id/description"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/description"
+            android:id="@+id/dateinfo"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="142 minutes"
+                android:textColor="@color/colorDark"
+                android:gravity="center"
+                android:id="@+id/duration"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2019-01-16"
+                android:textColor="@color/colorDark"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/duration"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/releasedate"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="9.3"
+                android:gravity="center"
+                android:id="@+id/rate"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorGreen"
+                android:layout_marginRight="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/generics"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/dateinfo"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="comedy,drama, thriller"
+                android:textColor="@color/colorDark"
+                android:id="@+id/theme"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="en"
+                android:gravity="center"
+                android:id="@+id/lan"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorRed"
+                android:layout_marginRight="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/generics"
+            android:background="@color/white_50"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/budget"
+                android:text="Budget"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorDark"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/budgetvalue"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/budget"
+                android:layout_centerHorizontal="true"
+                android:text="Budget"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/colorDark"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/revenue"
+                android:text="Revenuue"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorDark"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/revenuevalue"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/budget"
+                android:layout_centerHorizontal="true"
+                android:text="200000000"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/colorDark"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

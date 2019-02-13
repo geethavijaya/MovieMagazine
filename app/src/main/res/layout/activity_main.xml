@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_1"
+    tools:context="scenerio.testing.com.petsearch.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/colorGreen"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Popular movies"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/reverse"
+            android:tint="@color/colorWhite"
+            android:id="@+id/filter"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search"
+            android:tint="@color/colorWhite"
+            android:layout_toLeftOf="@+id/filter"
+            android:layout_marginRight="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"/>
+</RelativeLayout>
